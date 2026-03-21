@@ -1,0 +1,11 @@
+[[CURRENCIES]]
+code="AMAN"
+issuer="GDEEBBMBPTWKOIERQQAVCIAM6RKWKMSNYVH3Z3P7G3KGZIOHIYMNZL5Z" # ضع هنا العنوان الذي يبدأ بـ G
+name="Aman Recovery Network"
+description="A decentralized global protocol for securing lost items and rewarding finders via Pi Network. Protect your valuables with a blockchain-backed digital identity."
+image="https://hmmodlouizy.github.io/aman-token/logo.png"
+display_decimals=7
+
+[DOCUMENTATION]
+org_name="Aman Network Team"
+org_url="https://hmmodlouizy.github.io/aman-token/"
