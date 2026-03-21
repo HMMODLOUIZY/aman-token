@@ -1,0 +1,21 @@
+# AMAN Token Identity File
+# Official Utility & Security Documentation
+
+ACCOUNTS=[
+"GDEEBBMBPTWKOIERQQAVCIAM6RKWKMSNYVH3Z3P7G3KGZIOHIYMNZL5Z" # Replace with your Issuer PUBLIC KEY (Starts with G)
+]
+
+[[CURRENCIES]]
+code="AMAN"
+issuer="GDEEBBMBPTWKOIERQQAVCIAM6RKWKMSNYVH3Z3P7G3KGZIOHIYMNZL5Z" # Replace with your Issuer PUBLIC KEY (Starts with G)
+display_decimals=7
+name="AMAN Token"
+desc="AMAN is a decentralized utility token designed to power a comprehensive security ecosystem. It provides secure asset tracking, identity verification, and automated protection protocols using advanced blockchain infrastructure."
+conditions="Used as the primary medium for security services and digital asset management within the AMAN platform."
+image="https://raw.githubusercontent.com/HMMODLOUIZY/aman-token/main/icon.png"
+
+[DOCUMENTATION]
+ORG_NAME="AMAN Project"
+ORG_URL="https://github.com/HMMODLOUIZY/aman-token"
+ORG_DESCRIPTION="A technology-driven project specialized in developing innovative digital security, cryptographic tracking, and decentralized asset management solutions."
+
