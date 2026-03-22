@@ -180,6 +180,60 @@
             <p style="margin-top: 10px; font-weight: bold;">Important: Make sure you have at least 1.0 Test-Pi in your wallet to cover the network reserve for the Trustline.</p>
         </div>
     </section>
+
+<section id="waitlist" style="padding: 100px 8%; background: linear-gradient(180deg, var(--bg-color) 0%, var(--royal-blue) 100%); text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto; background: var(--glass); padding: 50px; border-radius: 30px; border: 1px solid rgba(196, 155, 62, 0.3); box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);">
+        
+        <i class="fas fa-paper-plane" style="font-size: 50px; color: var(--neon-blue); margin-bottom: 20px;"></i>
+        <h2 style="color: var(--gold-accent); font-size: 2.5rem; margin-bottom: 15px;">Join the Waitlist</h2>
+        <p style="color: #cbd5e0; margin-bottom: 30px;">
+            Be part of the AMAN ecosystem early. Register your wallet address below to receive <span style="color: var(--neon-blue); font-weight: bold;">5 AMAN Tokens</span> as a welcome gift.
+        </p>
+
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScUaYQGAwk6jvK8ZMcF6ZYG-isvAbbTxNXLvVBLpF1Eaf-uJQ/formResponse" 
+              method="POST" 
+              target="hidden_iframe" 
+              id="waitlistForm" 
+              style="display: flex; flex-direction: column; gap: 20px; text-align: left;"
+              onsubmit="showSuccess()">
+            
+            <div>
+                <label style="display: block; margin-bottom: 8px; color: var(--gold-accent); font-weight: bold;">Email Address:</label>
+                <input type="email" name="entry.2000930313" placeholder="your-email@example.com" required 
+                    style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); color: white; outline: none;">
+            </div>
+
+            <div>
+                <label style="display: block; margin-bottom: 8px; color: var(--gold-accent); font-weight: bold;">Pi Testnet Wallet Address:</label>
+                <input type="text" name="entry.550307340" placeholder="G..." required 
+                    style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); color: white; outline: none;">
+                <small style="color: #888; margin-top: 5px; display: block;">* Please ensure you've enabled the AMAN Trustline first.</small>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; padding: 18px; font-size: 1.1rem; cursor: pointer; border: none; margin-top: 10px; background: var(--gold-primary); color: var(--royal-blue); font-weight: bold; border-radius: 10px;">
+                Claim 5 AMAN Airdrop
+            </button>
+        </form>
+
+        <div id="successMsg" style="display: none; margin-top: 20px; color: var(--neon-blue); font-weight: bold; padding: 20px; border: 1px solid var(--neon-blue); border-radius: 10px;">
+            <i class="fas fa-check-circle"></i> Success! You are on the list. 5 AMAN will be sent soon.
+        </div>
+    </div>
+</section>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+<script>
+    let submitted = false;
+    function showSuccess() {
+        submitted = true;
+        document.getElementById('waitlistForm').style.opacity = '0.3';
+        document.getElementById('waitlistForm').style.pointerEvents = 'none';
+        document.getElementById('successMsg').style.display = 'block';
+    }
+</script>
+
+
     
     <footer>
         <p>&copy; 2026 AMAN Project | Decentralized Asset Recovery Initiative</p>
