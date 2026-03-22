@@ -1,1 +1,240 @@
-<h1>Aman Token Official Site</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAN Project | Future of Digital Security</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #050a14;
+            --royal-blue: #0A1931;
+            --gold-primary: #C49B3E;
+            --gold-accent: #E1C16E;
+            --neon-blue: #00F0FF;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Background Animation */
+        .bg-glow {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #0a1931 0%, #050a14 100%);
+            z-index: -1;
+        }
+
+        nav {
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(5, 10, 20, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(196, 155, 62, 0.2);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-area img {
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid var(--gold-primary);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--gold-accent);
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            gap: 50px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, var(--gold-accent), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 350px;
+            filter: drop-shadow(0 0 30px rgba(0, 240, 255, 0.3));
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-gold {
+            background: linear-gradient(45deg, var(--gold-primary), var(--gold-accent));
+            color: var(--royal-blue);
+            box-shadow: 0 4px 15px rgba(196, 155, 62, 0.4);
+        }
+
+        .btn-gold:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(196, 155, 62, 0.6);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--glass);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 240, 255, 0.1);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            border-color: var(--neon-blue);
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .card i {
+            font-size: 50px;
+            color: var(--gold-primary);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--gold-accent);
+        }
+
+        footer {
+            padding: 50px 10%;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background: #03070d;
+        }
+
+        .token-details {
+            margin: 20px 0;
+            font-family: monospace;
+            color: var(--neon-blue);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <nav>
+        <div class="logo-area">
+            <img src="icon.png" alt="AMAN Logo">
+            <div class="logo-text">AMAN</div>
+        </div>
+        <div>
+            <a href="#" style="color: white; text-decoration: none; margin-left: 20px;">Ecosystem</a>
+            <a href="#" style="color: white; text-decoration: none; margin-left: 20px;">Security</a>
+            <a href="https://hmmodlouizy.github.io/aman-token/.well-known/stellar.toml" target="_blank" class="btn btn-gold" style="padding: 10px 20px; margin-left: 20px;">Verified Asset</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Securing Your<br>Digital Legacy</h1>
+            <p>AMAN is a decentralized utility token built on Pi Network, dedicated to advanced asset tracking, identity verification, and high-tier cryptographic security solutions.</p>
+            <div class="token-details">
+                Asset ID: AMAN | Supply: 10,000,000
+            </div>
+            <a href="#" class="btn btn-gold">Explore Aman Ecosystem</a>
+        </div>
+        <div class="hero-image">
+            <img src="icon.png" alt="AMAN Token">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <i class="fas fa-shield-halved"></i>
+            <h3>Digital Protection</h3>
+            <p>Military-grade encryption protocols to ensure your digital assets are shielded from any unauthorized access.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-fingerprint"></i>
+            <h3>Identity Verification</h3>
+            <p>Next-generation biometric and blockchain-based ID solutions integrated within the Pi Network ecosystem.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-location-crosshairs"></i>
+            <h3>Asset Tracking</h3>
+            <p>Real-time, transparent tracking of cryptographic assets with automated security alerts and recovery protocols.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AMAN Project. Developed as a Moroccan Tech Initiative.</p>
+        <p style="font-size: 12px; color: #666; margin-top: 10px;">Powered by Pi Network Blockchain Technology</p>
+    </footer>
+
+</body>
+</html>
