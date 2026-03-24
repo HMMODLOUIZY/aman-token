@@ -188,6 +188,65 @@
 .view-more { text-align: center; }
 
         footer { padding: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: #718096; }
+
+.main-footer {
+    background-color: #050c16; /* أزرق داكن جداً */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #d4af37; /* خط ذهبي علوي */
+    color: #e6f1ff;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.gold-text { color: #d4af37; }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* تأثيرات الحركات عند مرور الماوس */
+.social-icon:hover {
+    transform: translateY(-5px);
+    background: #d4af37;
+    color: #050c16;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* ألوان مخصصة عند التحويم (اختياري) */
+.social-icon.telegram:hover { background: #0088cc; border-color: #0088cc; color: white; }
+.social-icon.x-twitter:hover { background: #000000; border-color: #333; color: white; }
+.social-icon.youtube:hover { background: #ff0000; border-color: #ff0000; color: white; }
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #8892b0;
+}
+        
     </style>
 </head>
 <body>
@@ -357,10 +416,27 @@
 </section>
 
     
-    <footer>
-        <p>&copy; 2026 AMAN Project | Decentralized Asset Recovery Initiative</p>
-        <p>Built on Pi Network Blockchain</p>
-    </footer>
+    <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <span class="gold-text">AMAN</span> PROTOCOL
+        </div>
+        
+        <p>Follow our official channels for the latest updates</p>
+        
+        <div class="social-links">
+            <a href="#" class="social-icon facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://t.me/YourChannel" class="social-icon telegram" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://x.com/YourAccount" class="social-icon x-twitter" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-icon instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon youtube" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 AMAN Protocol. All Rights Reserved. Built on Pi Network.</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
